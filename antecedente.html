@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARCHIVADOR DE LEYES</title>
+    <title>ANTECEDENTES</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -75,68 +75,27 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             animation: slideIn 1s ease-in-out;
         }
-        .button-section {
-            text-align: center;
-            margin: 30px 0;
+        h2 {
+            color: #004080;
+            margin-bottom: 10px;
+            animation: fadeInUp 1.2s ease-in-out;
         }
-        .button-section a {
+        .ley {
+            margin-bottom: 20px;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+        .descargar {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 10px 20px;
             background-color: #004080;
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
             border-radius: 5px;
-            transition: all 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
         }
-        .button-section a:hover {
+        .descargar:hover {
             background-color: #006666;
             transform: scale(1.05);
-        }
-        .social-section {
-            text-align: center;
-            margin: 40px 0;
-            animation: fadeInUp 1.5s ease-in-out;
-        }
-        .social-section a {
-            display: inline-block;
-            margin: 0 10px;
-            color: #004080;
-            font-size: 1.5rem;
-            text-decoration: none;
-            transition: transform 0.3s ease-in-out;
-        }
-        .social-section a:hover {
-            color: #006666;
-            transform: scale(1.2);
-        }
-        .about-section {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #f0f8ff;
-            border-radius: 10px;
-        }
-        .about-section img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        .about-section h2 {
-            color: #004080;
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        .about-section p {
-            font-size: 1.1rem;
-            color: #333;
-            line-height: 1.8;
-            margin: 0 auto;
-            max-width: 800px;
         }
         footer {
             text-align: center;
@@ -163,44 +122,33 @@
 <header>
     <img src="img/UNAM.png" alt="Logo UNAM">
     <div>
-        <h1>ARCHIVADOR DE LEYES</h1>
+        <h1>ANTECEDENTES</h1>
     </div>
     <img src="img/EPIAM.jpg" alt="Logo EPIAM">
 </header>
 
 <nav>
+    <a href="index.html">Inicio</a>
     <a href="antecedente.html">ANTECEDENTES</a>
     <a href="general.html">GENERAL</a>
     <a href="aire.html">AIRE</a>
     <a href="ruido.html">RUIDO</a>
     <a href="tabaco.html">TABACO</a>
-    <a href="radiacion.html">RADIACIÓN</a>
+    <a href="radiacion.html">RADIACI&Oacute;N</a>
 </nav>
 
 <div class="container">
-    <div class="about-section">
-        <h2>Sobre Nosotros</h2>
-        <p>
-            Somos los alumnos del <strong>7º ciclo</strong> de la carrera de <strong>Ingeniería Ambiental</strong> de la <strong>Universidad Nacional de Moquegua</strong>. 
-            Esta página fue creada con el objetivo de proporcionar acceso fácil y organizado a las leyes relacionadas con el <strong>control de la contaminación del aire</strong> en el Perú.
-            Explorando estas leyes, encontrarás información clave sobre normas, regulaciones y decretos vigentes que buscan proteger nuestro medio ambiente y la salud pública.
-        </p>
-        <img src="img/GRUPAL.jpg" alt="Foto grupal de los creadores">
-        <p>
-            Creemos que la educación y el acceso a la información son pilares fundamentales para construir un futuro más limpio y sostenible. 
-            ¡Explora nuestro archivador y conoce las normas que cuidan nuestro aire!
-        </p>
-    </div>
-    <div class="button-section">
-        <h2>Descarga Completa</h2>
-        <a href="pdf/compilado_leyes.zip" download>Descargar Todas las Leyes</a>
-    </div>
+    <section>
+        <h2>&iquest;Qu&eacute; encontrar&aacute;s aqu&iacute;?</h2>
+        <p>En esta secci&oacute;n se presentan los antecedentes normativos relacionados con la regulaci&oacute;n ambiental en el Per&uacute;. Destaca la creaci&oacute;n del <strong>Ministerio del Ambiente (MINAM)</strong> mediante el <strong>Decreto Legislativo N&deg; 1013</strong>, cuya responsabilidad principal es la elaboraci&oacute;n de los <strong>Est&aacute;ndares de Calidad Ambiental (ECA)</strong> y los <strong>L&iacute;mites M&aacute;ximos Permisibles (LMP)</strong>. Esta secci&oacute;n proporciona acceso a la normativa esencial para comprender el marco legal ambiental.</p>
+    </section>
 
-    <div class="social-section">
-        <h2>Síguenos en Redes Sociales</h2>
-        <a href="https://www.facebook.com/ing.ambiental.unam/" target="_blank">Facebook EPIAM UNAM</a>
-        <a href="https://www.facebook.com/p/GICA-PER%C3%9A-100072500283469/?_rdr" target="_blank">Facebook GICA PERÚ</a>
-    </div>
+    <section class="ley">
+        <h2>Decreto Legislativo N&deg; 1013</h2>
+        <p>El <strong>Decreto Legislativo N&deg; 1013</strong> establece las bases para la creaci&oacute;n y funciones del <strong>Ministerio del Ambiente</strong> (MINAM). Destaca la regulaci&oacute;n de los <strong>Est&aacute;ndares de Calidad Ambiental (ECA)</strong> y los <strong>L&iacute;mites M&aacute;ximos Permisibles (LMP)</strong>, esenciales para la protecci&oacute;n del medio ambiente en el Per&uacute;.</p>
+        <a class="descargar" href="pdf/DL_N&deg;_1013.pdf" target="_blank">Descargar Ley Completa</a>
+        <a class="descargar" href="pdf/R1013.pdf" target="_blank">Descargar Resumen de la Ley</a>
+    </section>
 </div>
 
 <footer>

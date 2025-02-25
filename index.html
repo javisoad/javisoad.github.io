@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHIVADOR DE LEYES - AGUA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff; /* Fondo más claro */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0077b6; /* Azul más moderno */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between; /* Separar logos y título */
+            align-items: center;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header img {
+            height: 80px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            flex-grow: 1; /* Centrar el título */
+            text-align: center;
+        }
+        nav {
+            background-color: #005f73; /* Azul más oscuro */
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #023e8a; /* Azul más intenso */
+            color: #f4f4f4;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #f4f4f4;
+            bottom: 0;
+            left: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        .about-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e6f7f7; /* Fondo más claro */
+            border-radius: 10px;
+        }
+        .about-section img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .about-section h2 {
+            color: #0077b6; /* Azul moderno */
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .button-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .button-section a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0077b6; /* Azul moderno */
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .button-section a:hover {
+            background-color: #023e8a; /* Azul más intenso */
+            transform: scale(1.05);
+        }
+        .social-section {
+            text-align: center;
+            margin: 40px 0;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .social-section a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #0077b6; /* Azul moderno */
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-section a:hover {
+            color: #023e8a; /* Azul más intenso */
+            transform: scale(1.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #005f73; /* Azul más oscuro */
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/UNAM.png" alt="Logo UNAM" style="order: 1;"> <!-- Logo UNAM a la izquierda -->
+    <h1 style="order: 2;">ARCHIVADOR DE LEYES - AGUA</h1> <!-- Título en el centro -->
+    <img src="img/EPIAM.jpg" alt="Logo EPIAM" style="order: 3;"> <!-- Logo EPIAM a la derecha -->
+</header>
+
+<nav>
+    <a href="gestion.html">Gestión Integral</a>
+    <a href="calidad.html">Calidad del Agua</a>
+    <a href="reutilizacion.html">Reutilización</a>
+    <a href="usuarios.html">Organizaciones</a>
+    <a href="inversion.html">Inversión</a>
+    <a href="linea-tiempo.html">Línea de Tiempo</a>
+</nav>
+
+<div class="container">
+    <div class="about-section">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Esta página pertenece al curso de Contaminación y Control de Aguas de la Universidad Nacional de Moquegua. 
+            Fue creada con el objetivo de proporcionar acceso fácil y organizado a las leyes relacionadas con la gestión del agua en el Perú.
+        </p>
+        <img src="img/GRUPAL.jpg" alt="Foto grupal de los creadores">
+	<h2>Integrantes del grupo:</h2>
+        <p>
+            Micaela Valentina Ramirez Vizcarra<br>
+            Melany Andrea Pachacute Nina<br>
+            Carlos Daniel Gutiérrez Quispe<br>
+            Wilian Humberto Vargas Farfán<br>
+            Erick Paul Atiquipa Mamani<br>
+            Pierina Cialey Quispe Estaca
+        </p>
+    </div>
+
+    <div class="button-section">
+        <h2>Descarga Completa</h2>
+        <a href="pdf/compilado_leyes.zip" download>Descargar Todas las Leyes</a>
+    </div>
+
+    <div class="social-section">
+        <h2>Síguenos en Redes Sociales</h2>
+        <a href="https://www.facebook.com/ing.ambiental.unam/" target="_blank">Facebook EPIAM UNAM</a>
+        <a href="https://www.facebook.com/p/GICA-PER%C3%9A-100072500283469/?_rdr" target="_blank">Facebook GICA PERÚ</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 ARCHIVADOR DE LEYES - AGUA. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

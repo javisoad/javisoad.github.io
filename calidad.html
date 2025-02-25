@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calidad del Agua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header img {
+            height: 80px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav {
+            background-color: #005f73;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #023e8a;
+            color: #f4f4f4;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #f4f4f4;
+            bottom: 0;
+            left: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        .about-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+        }
+        .about-section h2 {
+            color: #0077b6;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .laws-section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+        }
+        .law-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+        .law-card h3 {
+            color: #0077b6;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .law-card p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .law-card .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0077b6;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        .law-card .download-btn:hover {
+            background-color: #023e8a;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #005f73;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/UNAM.png" alt="Logo UNAM" style="order: 1;">
+    <h1 style="order: 2;">Calidad del Agua</h1>
+    <img src="img/EPIAM.jpg" alt="Logo EPIAM" style="order: 3;">
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="gestion.html">Gestión Integral</a>
+    <a href="calidad.html">Calidad del Agua</a>
+    <a href="reutilizacion.html">Reutilización</a>
+    <a href="usuarios.html">Organizaciones</a>
+    <a href="inversion.html">Inversión</a>
+    <a href="linea-tiempo.html">Línea de Tiempo</a>
+</nav>
+
+<div class="container">
+    <div class="about-section">
+        <h2>Calidad del Agua</h2>
+        <p>
+            En esta sección encontrarás las principales normativas relacionadas con la calidad del agua en el Perú. 
+            Estas leyes y decretos establecen los estándares, límites permisibles y valores máximos admisibles para 
+            garantizar la protección de la salud humana y el medio ambiente. Explora los documentos oficiales y conoce 
+            las regulaciones que aseguran la calidad del agua en el país.
+        </p>
+    </div>
+
+    <div class="laws-section">
+        <!-- Ley 1 -->
+        <div class="law-card">
+            <h3>Decreto Supremo N° 004-2017-MINAM - Estándares de Calidad Ambiental (ECA) para Agua</h3>
+            <p>
+                Establece los niveles máximos permisibles de contaminantes en el agua para proteger la salud humana y el medio ambiente.
+            </p>
+            <a href="pdf/DS-004-2017-MINAM.pdf" class="download-btn" download>Descargar</a>
+        </div>
+        <!-- Ley 2 -->
+        <div class="law-card">
+            <h3>Decreto Supremo N° 003-2010-MINAM - Límites Máximos Permisibles (LMP) para Efluentes</h3>
+            <p>
+                Aprueba los límites máximos permisibles de contaminantes que pueden ser vertidos en cuerpos de agua por actividades económicas.
+            </p>
+            <a href="pdf/ds_003-2010-minam.pdf" class="download-btn" download>Descargar</a>
+        </div>
+        <!-- Ley 3 -->
+        <div class="law-card">
+            <h3>Decreto Supremo N° 002-2008-MINAM - Valores Máximos Admisibles (VMA) para Descargas de Aguas Residuales</h3>
+            <p>
+                Establece los valores máximos admisibles para descargas de aguas residuales no domésticas.
+            </p>
+            <a href="pdf/ds_002_2008.pdf" class="download-btn" download>Descargar</a>
+        </div>
+        <!-- Ley 4 -->
+        <div class="law-card">
+            <h3>Resolución Jefatural N° 058-2017-ANA - Valores Máximos Permisibles (VMP) para Descargas No Domésticas</h3>
+            <p>
+                Aprueba los valores máximos permisibles para descargas no domésticas en cuerpos de agua.
+            </p>
+            <a href="pdf/058-2017-ana.pdf" class="download-btn" download>Descargar</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 ARCHIVADOR DE LEYES - AGUA. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

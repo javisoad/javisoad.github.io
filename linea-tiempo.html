@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo - Normativas del Agua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header img {
+            height: 80px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav {
+            background-color: #005f73;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #023e8a;
+            color: #f4f4f4;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #f4f4f4;
+            bottom: 0;
+            left: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        .timeline-section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+        }
+        .timeline-section h2 {
+            color: #0077b6; /* Mismo color que "Sobre Nosotros" */
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .timeline-section p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.8;
+            margin: 0 auto 20px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #0077b6;
+            top: 0;
+            bottom: 0;
+            left: 0; /* Línea al lado derecho */
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 100%;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: -12px; /* Punto al lado derecho */
+            background-color: #fff;
+            border: 4px solid #0077b6;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-content {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            left: 30px; /* Alineado a la izquierda de la línea */
+            width: 80%;
+        }
+        .timeline-content h3 {
+            color: #0077b6;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .timeline-content p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #005f73;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInLeft {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/UNAM.png" alt="Logo UNAM" style="order: 1;">
+    <h1 style="order: 2;">Línea de Tiempo - Normativas del Agua</h1>
+    <img src="img/EPIAM.jpg" alt="Logo EPIAM" style="order: 3;">
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="gestion.html">Gestión Integral</a>
+    <a href="calidad.html">Calidad del Agua</a>
+    <a href="reutilizacion.html">Reutilización</a>
+    <a href="usuarios.html">Organizaciones</a>
+    <a href="inversion.html">Inversión</a>
+    <a href="linea-tiempo.html">Línea de Tiempo</a>
+</nav>
+
+<div class="container">
+    <div class="timeline-section">
+        <h2>Línea de Tiempo de las Normativas del Agua</h2>
+        <p>
+            Esta línea de tiempo muestra las principales normativas relacionadas con la gestión del agua en el Perú, ordenadas cronológicamente. 
+            Aquí encontrarás información sobre las leyes, decretos y resoluciones que han marcado un hito en la regulación y protección de este recurso vital.
+        </p>
+        <div class="timeline">
+            <!-- Ley 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2008 - Valores Máximos Admisibles (VMA)</h3>
+                    <p>Decreto Supremo N° 002-2008-MINAM: Establece los Valores Máximos Admisibles (VMA) para descargas de aguas residuales no domésticas.</p>
+                </div>
+            </div>
+            <!-- Ley 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2009 - Ley General de Aguas</h3>
+                    <p>Ley N° 29338: Marco legal para la gestión integrada de los recursos hídricos en el Perú.</p>
+                </div>
+            </div>
+            <!-- Ley 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2010 - Límites Máximos Permisibles (LMP)</h3>
+                    <p>Decreto Supremo N° 003-2010-MINAM: Aprueba los Límites Máximos Permisibles (LMP) para efluentes de actividades económicas.</p>
+                </div>
+            </div>
+            <!-- Ley 4 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2010 - Reglamento de la Ley de Recursos Hídricos</h3>
+                    <p>Decreto Supremo N° 001-2010-AG: Reglamento de la Ley General de Aguas.</p>
+                </div>
+            </div>
+            <!-- Ley 5 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2015 - Plan Nacional de Recursos Hídricos</h3>
+                    <p>Decreto Supremo N° 007-2015-MINAM: Aprueba el Plan Nacional de Recursos Hídricos.</p>
+                </div>
+            </div>
+            <!-- Ley 6 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2017 - Estándares de Calidad Ambiental (ECA) para Agua</h3>
+                    <p>Decreto Supremo N° 004-2017-MINAM: Actualiza los Estándares de Calidad Ambiental (ECA) para agua.</p>
+                </div>
+            </div>
+            <!-- Ley 7 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2017 - Valores Máximos Permisibles (VMP)</h3>
+                    <p>Resolución Jefatural N° 058-2017-ANA: Aprueba los Valores Máximos Permisibles (VMP) para descargas no domésticas.</p>
+                </div>
+            </div>
+            <!-- Ley 8 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2018 - Ley de Reutilización de Aguas Residuales</h3>
+                    <p>Ley N° 30588: Regula la reutilización de aguas residuales tratadas.</p>
+                </div>
+            </div>
+            <!-- Ley 9 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2020 - Modificaciones a la Ley General de Aguas</h3>
+                    <p>Decreto Legislativo N° 1505: Introduce modificaciones a la Ley General de Aguas para mejorar la gestión hídrica.</p>
+                </div>
+            </div>
+            <!-- Ley 10 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2021 - Plan Nacional de Acción Ambiental (PLANAA)</h3>
+                    <p>Decreto Supremo N° 008-2015-MINAM: Actualiza el Plan Nacional de Acción Ambiental, incluyendo acciones para la gestión del agua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 ARCHIVADOR DE LEYES - AGUA. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

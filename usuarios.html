@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizaciones de Usuarios de Agua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header img {
+            height: 80px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav {
+            background-color: #005f73;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #023e8a;
+            color: #f4f4f4;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #f4f4f4;
+            bottom: 0;
+            left: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        .about-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+        }
+        .about-section h2 {
+            color: #0077b6;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .laws-section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+        }
+        .law-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+        .law-card h3 {
+            color: #0077b6;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .law-card p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .law-card .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0077b6;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        .law-card .download-btn:hover {
+            background-color: #023e8a;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #005f73;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/UNAM.png" alt="Logo UNAM" style="order: 1;">
+    <h1 style="order: 2;">Organizaciones de Usuarios de Agua</h1>
+    <img src="img/EPIAM.jpg" alt="Logo EPIAM" style="order: 3;">
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="gestion.html">Gestión Integral</a>
+    <a href="calidad.html">Calidad del Agua</a>
+    <a href="reutilizacion.html">Reutilización</a>
+    <a href="usuarios.html">Organizaciones</a>
+    <a href="inversion.html">Inversión</a>
+    <a href="linea-tiempo.html">Línea de Tiempo</a>
+</nav>
+
+<div class="container">
+    <div class="about-section">
+        <h2>Organizaciones de Usuarios de Agua</h2>
+        <p>
+            En esta sección encontrarás las principales normativas relacionadas con las organizaciones de usuarios de agua en el Perú. 
+            Estas leyes y decretos regulan la formación, funcionamiento y competencias de las organizaciones que gestionan el uso del agua, 
+            como las juntas de regantes y comités de agua potable. Explora los documentos oficiales y conoce las regulaciones que 
+            promueven la participación activa de los usuarios en la gestión del agua.
+        </p>
+    </div>
+
+    <div class="laws-section">
+        <!-- Ley 1 -->
+        <div class="law-card">
+            <h3>Ley N° 30157 - Ley de Organizaciones de Usuarios de Agua</h3>
+            <p>
+                Regula la formación, funcionamiento y competencias de las organizaciones de usuarios de agua, como las juntas de regantes 
+                y comités de agua potable, para garantizar una gestión participativa y eficiente del agua.
+            </p>
+            <a href="pdf/30157.pdf" class="download-btn" download>Descargar</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 ARCHIVADOR DE LEYES - AGUA. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

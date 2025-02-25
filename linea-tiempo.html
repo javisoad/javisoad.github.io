@@ -84,17 +84,10 @@
             border-radius: 10px;
         }
         .timeline-section h2 {
-            color: #0077b6; /* Mismo color que "Sobre Nosotros" */
+            color: #0077b6;
             font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        .timeline-section p {
-            font-size: 1.1rem;
-            color: #333;
-            line-height: 1.8;
-            margin: 0 auto 20px;
-            max-width: 800px;
-            text-align: center;
+            margin-bottom: 20px;
+            text-align: center; /* Título centrado */
         }
         .timeline {
             position: relative;
@@ -108,7 +101,7 @@
             background-color: #0077b6;
             top: 0;
             bottom: 0;
-            left: 0; /* Línea al lado derecho */
+            left: 0; /* Línea al lado izquierdo */
         }
         .timeline-item {
             padding: 10px 40px;
@@ -122,7 +115,7 @@
             position: absolute;
             width: 25px;
             height: 25px;
-            left: -12px; /* Punto al lado derecho */
+            left: -12px; /* Punto al lado izquierdo */
             background-color: #fff;
             border: 4px solid #0077b6;
             top: 15px;
@@ -135,13 +128,22 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
-            left: 30px; /* Alineado a la izquierda de la línea */
+            left: 30px; /* Alineado a la derecha de la línea */
             width: 80%;
         }
         .timeline-content h3 {
             color: #0077b6;
             font-size: 1.5rem;
             margin-bottom: 10px;
+        }
+        .timeline-content h3 a {
+            color: #0077b6;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .timeline-content h3 a:hover {
+            color: #023e8a;
+            text-decoration: underline;
         }
         .timeline-content p {
             font-size: 1rem;
@@ -185,83 +187,105 @@
     <a href="inversion.html">Inversión</a>
     <a href="linea-tiempo.html">Línea de Tiempo</a>
 </nav>
-
 <div class="container">
     <div class="timeline-section">
         <h2>Línea de Tiempo de las Normativas del Agua</h2>
-        <p>
-            Esta línea de tiempo muestra las principales normativas relacionadas con la gestión del agua en el Perú, ordenadas cronológicamente. 
-            Aquí encontrarás información sobre las leyes, decretos y resoluciones que han marcado un hito en la regulación y protección de este recurso vital.
-        </p>
         <div class="timeline">
-            <!-- Ley 1 -->
+            <!-- Ley 1 (1997) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2008 - Valores Máximos Admisibles (VMA)</h3>
-                    <p>Decreto Supremo N° 002-2008-MINAM: Establece los Valores Máximos Admisibles (VMA) para descargas de aguas residuales no domésticas.</p>
+                    <h3><a href="pdf/N_008-97-EM-DGAA.pdf" download>1997 - N° 008-97-EM-DGAA</a></h3>
+                    <p>Niveles máximos permisibles para efluentes líquidos producto de las actividades de generación, transmisión y distribución de energía eléctrica.</p>
                 </div>
             </div>
-            <!-- Ley 2 -->
+            <!-- Ley 4 (2008) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2009 - Ley General de Aguas</h3>
-                    <p>Ley N° 29338: Marco legal para la gestión integrada de los recursos hídricos en el Perú.</p>
+                    <h3><a href="pdf/ds_002_2008.pdf" download>2008 - DS N° 002-2008-MINAM</a></h3>
+                    <p>Aprueban los Estándares Nacionales de Calidad Ambiental para Agua.</p>
                 </div>
             </div>
-            <!-- Ley 3 -->
+            <!-- Ley 5 (2009) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2010 - Límites Máximos Permisibles (LMP)</h3>
-                    <p>Decreto Supremo N° 003-2010-MINAM: Aprueba los Límites Máximos Permisibles (LMP) para efluentes de actividades económicas.</p>
+                    <h3><a href="pdf/29338.pdf" download>2009 - Ley N° 29338</a></h3>
+                    <p>Ley General de Aguas: Marco legal para la gestión integrada de los recursos hídricos en el Perú.</p>
                 </div>
             </div>
-            <!-- Ley 4 -->
+             <!-- Ley 8 (2010) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2010 - Reglamento de la Ley de Recursos Hídricos</h3>
-                    <p>Decreto Supremo N° 001-2010-AG: Reglamento de la Ley General de Aguas.</p>
+            <h3><a href="pdf/ds_003-2010-minam.pdf" download>2010 - DS N° 003-2010-MINAM</a></h3>
+            <p>Límites Máximos Permisibles (LMP) para efluentes de actividades económicas.</p>
                 </div>
             </div>
-            <!-- Ley 5 -->
+
+             <!-- Ley 9 (2010) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2015 - Plan Nacional de Recursos Hídricos</h3>
-                    <p>Decreto Supremo N° 007-2015-MINAM: Aprueba el Plan Nacional de Recursos Hídricos.</p>
+                    <h3><a href="pdf/001-2010-AG.pdf" download>2010 - DS N° 001-2010-AG</a></h3>
+                    <p>Reglamento de la Ley de Recursos Hídricos.</p>
                 </div>
             </div>
-            <!-- Ley 6 -->
+
+
+            <!-- Ley 10 (2013) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2017 - Estándares de Calidad Ambiental (ECA) para Agua</h3>
-                    <p>Decreto Supremo N° 004-2017-MINAM: Actualiza los Estándares de Calidad Ambiental (ECA) para agua.</p>
+                    <h3><a href="pdf/30045.pdf" download>2013 - Ley N° 30045</a></h3>
+                    <p>La presente Ley es de aplicación a todos los prestadores de servicios de saneamiento a nivel nacional y a las entidades de la administración.</p>
                 </div>
             </div>
-            <!-- Ley 7 -->
+            <!-- Ley 11 (2014) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2017 - Valores Máximos Permisibles (VMP)</h3>
-                    <p>Resolución Jefatural N° 058-2017-ANA: Aprueba los Valores Máximos Permisibles (VMP) para descargas no domésticas.</p>
+                    <h3><a href="pdf/30157.pdf" download>2014 - Ley N° 30157</a></h3>
+                    <p>Ley de Organizaciones de Usuarios de Agua.</p>
                 </div>
             </div>
-            <!-- Ley 8 -->
+            <!-- Ley 14 (2017) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2018 - Ley de Reutilización de Aguas Residuales</h3>
-                    <p>Ley N° 30588: Regula la reutilización de aguas residuales tratadas.</p>
+                    <h3><a href="pdf/058-2017-ana.pdf" download>2017 - Resolución Jefatural N° 058-2017-ANA</a></h3>
+                    <p>La presente resolución tiene por objeto regular la forma y los plazos en que los usuarios de agua deben pagar la retribución económica por el uso del agua y por el vertimiento de agua residual tratada.</p>
                 </div>
             </div>
-            <!-- Ley 9 -->
+
+
+   		 <!-- Ley 15 (2017) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2020 - Modificaciones a la Ley General de Aguas</h3>
-                    <p>Decreto Legislativo N° 1505: Introduce modificaciones a la Ley General de Aguas para mejorar la gestión hídrica.</p>
+                    <h3><a href="pdf/DS-004-2017-MINAM.pdf" download>2017 - DS N° 004-2017-MINAM</a></h3>
+                    <p>Estándares de Calidad Ambiental (ECA) para agua.</p>
                 </div>
             </div>
-            <!-- Ley 10 -->
+
+            <!-- Ley 15 (2018) -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>2021 - Plan Nacional de Acción Ambiental (PLANAA)</h3>
-                    <p>Decreto Supremo N° 008-2015-MINAM: Actualiza el Plan Nacional de Acción Ambiental, incluyendo acciones para la gestión del agua.</p>
+                    <h3><a href="pdf/30588.pdf" download>2018 - Ley N° 30588</a></h3>
+                    <p>Ley de reforma constitucional que reconoce el derecho de acceso al agua como derecho constitucional.</p>
+                </div>
+            </div>
+            <!-- Ley 16 (2018) -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3><a href="pdf/ds_10-2018-minam.pdf" download>2018 - DS N° 010-2018-MINAM</a></h3>
+                    <p>Aprueban Límites Máximos Permisibles para Efluentes de los Establecimientos Industriales Pesqueros de Consumo Humano Directo e Indirecto.</p>
+                </div>
+            </div>
+            <!-- Ley 17 (2019) -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3><a href="pdf/DS_010-2019-VIVIENDA.pdf" download>2019 - DS N° 010-2019-VIVIENDA</a></h3>
+                    <p>Decreto Supremo que aprueba el Reglamento de Valores Máximos Admisibles (VMA) para las descargas de aguas residuales no domésticas en el sistema de alcantarillado 			sanitario.</p>
+                </div>
+            </div>
+            <!-- Ley 20 (2020) -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3><a href="pdf/011-2020-SUNASS-CD.pdf" download>2020 - Resolución N° 011-2020-SUNASS-CD</a></h3>
+                    <p>Aprueba los Valores Máximos Permisibles (VMP) para descargas no domésticas.</p>
                 </div>
             </div>
         </div>
@@ -269,7 +293,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2025 ARCHIVADOR DE LEYES - AGUA. Todos los derechos reservados.</p>
+    <p>&copy; 2024 ARCHIVADOR DE LEYES - AGUA. Todos los derechos reservados.</p>
 </footer>
 
 </body>

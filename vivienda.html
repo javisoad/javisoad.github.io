@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo - Vivienda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header img {
+            height: 80px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav {
+            background-color: #005f73;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #023e8a;
+            color: #f4f4f4;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #f4f4f4;
+            bottom: 0;
+            left: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        .timeline-section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+        }
+        .timeline-section h2 {
+            color: #0077b6;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center; /* Título centrado */
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #0077b6;
+            top: 0;
+            bottom: 0;
+            left: 0; /* Línea al lado izquierdo */
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 100%;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: -12px; /* Punto al lado izquierdo */
+            background-color: #fff;
+            border: 4px solid #0077b6;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-content {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            left: 30px; /* Alineado a la derecha de la línea */
+            width: 80%;
+        }
+        .timeline-content h3 {
+            color: #0077b6;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .timeline-content h3 a {
+            color: #0077b6;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .timeline-content h3 a:hover {
+            color: #023e8a;
+            text-decoration: underline;
+        }
+        .timeline-content p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #005f73;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInLeft {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+	<img src="img/UNAM.png" alt="Logo UNAM" style="order: 1;">
+        <h1 style="order: 2;">Línea de Tiempo - Vivienda</h1>
+	<img src="img/EPIAM.jpg" alt="Logo EPIAM" style="order: 3;">
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="gestion.html">Gestión Integral</a>
+    <a href="calidad.html">Calidad del Agua</a>
+    <a href="reutilizacion.html">Reutilización</a>
+    <a href="usuarios.html">Organizaciones</a>
+    <a href="inversion.html">Inversión</a>
+    <a href="linea-tiempo.html">Línea de Tiempo</a>
+	<a href="vivienda.html">Vivienda</a>
+	<a href="minam.html">MINAM</a>
+	<a href="ana.html">ANA</a>
+	<a href="midagri.html">MIDAGRI</a>
+</nav>
+
+<div class="container">
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3><a href="pdf/Decreto Supremo 021-2009-VIVIENDA.pdf" download>2009 - DS 021-2009-VIVIENDA</a></h3>
+                <p>Normativa relacionada con la gestión de vivienda.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3><a href="pdf/Decreto-Legislativo-N°-1280.pdf" download>2016 - Decreto Legislativo N° 1280</a></h3>
+                <p>Regulación del servicio de saneamiento.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3><a href="pdf/DS-013-2017-VIVIENDA.pdf" download>2017 - DS 013-2017-VIVIENDA</a></h3>
+                <p>Disposiciones complementarias en vivienda y saneamiento.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3><a href="pdf/DS-015-2017-VIVIENDA.pdf" download>2017 - DS 015-2017-VIVIENDA</a></h3>
+                <p>Regulación del acceso a la vivienda.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3><a href="pdf/DS-019-2017-VIVIENDA-1.pdf" download>2017 - DS 019-2017-VIVIENDA</a></h3>
+                <p>Normas para el saneamiento físico legal.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3><a href="pdf/DS_010-2019-VIVIENDA_MODIFICATORIA.pdf" download>2019 - DS 010-2019-VIVIENDA</a></h3>
+                <p>Modificación del reglamento sobre saneamiento y vivienda.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3><a href="pdf/RESOLUCION-011-02020-SUNASS-CD_MODIFICATORIA.pdf" download>2020 - Resolución 011-2020-SUNASS-CD</a></h3>
+                <p>Modificación de normativas para servicios de saneamiento.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2025 ARCHIVADOR DE LEYES - AGUA. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
